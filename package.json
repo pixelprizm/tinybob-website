@@ -1,24 +1,18 @@
 {
   "name": "tinybob-website",
-  "version": "1.0.0",
-  "description": "The website for the TinyBob project for the USC course CSCI-523 in Fall 2016",
-  "main": "index.js",
-  "scripts": {
-    "build": "echo 'TODO: build script coming soon' && exit 1",
-    "start": "npm run build && npm run serve",
-    "serve": "http-server ./build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/egauderman/tinybob-website.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/egauderman/tinybob-website/issues"
-  },
-  "homepage": "https://github.com/egauderman/tinybob-website#readme",
+  "version": "0.1.0",
+  "private": true,
   "devDependencies": {
-    "http-server": "^0.9.0"
+    "react-scripts": "0.7.0"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
