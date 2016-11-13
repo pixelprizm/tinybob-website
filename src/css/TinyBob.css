@@ -1,0 +1,21 @@
+.TinyBob {
+}
+
+.TinyBob .TinyBob-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 75vh;
+}
+
+.TinyBob .TinyBob-header-title {
+  font-size: 90px;
+}
+
+.TinyBob-header-big-letter {
+  font-size: 1.4em;
+}
+
+.TinyBob-section {
+  min-height: 400px;
+}

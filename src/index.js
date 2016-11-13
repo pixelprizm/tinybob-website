@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import TinyBob from './TinyBob';
+import './css/index.css';
+import './css/bootstrap/css/bootstrap.css';
 
 ReactDOM.render(
-  <App />,
+  <TinyBob />,
   document.getElementById('root')
 );
