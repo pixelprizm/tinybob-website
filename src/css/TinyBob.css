@@ -6,6 +6,8 @@
   flex-direction: column;
   justify-content: flex-end;
   height: 75vh;
+  background-color: #007888;
+  color: #FFFFFF;
 }
 
 .TinyBob .TinyBob-header-title {
