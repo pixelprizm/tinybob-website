@@ -1,5 +1,8 @@
-.TinyBob {
+.TinyBob-clearfix {
+  clear: both;
 }
+
+
 
 .TinyBob .TinyBob-header {
   display: flex;
@@ -7,17 +10,104 @@
   justify-content: flex-end;
   height: 75vh;
   background-color: #007888;
-  color: #FFFFFF;
+  color: #DDFFDD;
+  margin-bottom: 0;
 }
 
 .TinyBob .TinyBob-header-title {
   font-size: 90px;
 }
 
-.TinyBob-header-big-letter {
+.TinyBob-big-letter {
   font-size: 1.4em;
 }
 
-.TinyBob-section {
-  min-height: 400px;
+.TinyBob-section-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+
+.TinyBob-game-section {
+  min-height: 500px;
+  background-color: #AADDAA;
+  padding: 30px 0;
+}
+
+.TinyBob-game-images,
+.TinyBob-game-captions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.TinyBob-game-images {
+  padding: 20px 0;
+}
+
+.TinyBob-game-image {
+  width: 48%;
+  height: 36%;
+}
+
+.TinyBob-game-caption {
+  width: 48%;
+}
+
+
+
+.TinyBob-team-section {
+  min-height: 500px;
+  color: #DDFFDD;
+  background-color: #007888;
+  padding: 30px 0;
+}
+
+.TinyBob-team-column {
+  padding: 20px 20px;
+}
+
+.TinyBob-team-image-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.TinyBob-team-image {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.TinyBob-team-name {
+  text-align: center;
+}
+
+.TinyBob-team-position {
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+
+
+.TinyBob-footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 500px;
+  color: #777777;
+  background-color: #222222;
+  padding: 30px 0;
+}
+
+.TinyBob-footer-row {
+  margin: 20px 0;
+}
+
+.TinyBob-footer-logo {
+  float: left;
+  height: 60px;
+  padding-right: 10px;
 }
