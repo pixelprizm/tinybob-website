@@ -1,9 +1,3 @@
-.TinyBob-clearfix {
-  clear: both;
-}
-
-
-
 .TinyBob-title {
   font-family: 'Hogfish';
 }
@@ -109,13 +103,9 @@
 
 .TinyBob-footer-row {
   margin: 20px 0;
-  /*display: flex;*/
-  /*flex-direction: row;*/
-  /*justify-content: flex-start;*/
 }
 
 .TinyBob-footer-logo {
-  /*height: 80px;*/
   max-height: 80px;
 }
 
@@ -128,8 +118,4 @@
   background-color: #EEEEEE;
   display: inline-block;
   border-radius: 4px;
-}
-
-.TinyBob-footer-p {
-  /*margin-top: 20px;*/
 }

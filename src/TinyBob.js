@@ -85,7 +85,7 @@ class TinyBob extends Component {
                   <img alt="USC Viterbi GamePipe logo" src={gamepipeImage} className="TinyBob-footer-logo"/>
                 </div>
               </div>
-              <p className="col-sm-8 col-md-9 TinyBob-footer-p">
+              <p className="col-sm-8 col-md-9">
                 Made for the CSCI-523 Networked Games class at USC in fall 2016.
               </p>
             </div>
