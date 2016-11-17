@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: flex-end;
   height: 75vh;
+  min-height: 400px;
   background-color: #007888;
   color: #DDFFDD;
   margin-bottom: 0;
@@ -119,9 +120,7 @@
 }
 
 .TinyBob-footer-logo-positioning {
-  /*float: left;*/
-  /*margin-right: 10px;*/
-  /*width: 240px;*/
+  text-align: center;
   margin-bottom: 20px;
 }
 

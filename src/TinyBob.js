@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import './css/TinyBob.css';
+import nickImage from './images/eric.jpg';
+import mattImage from './images/eric.jpg';
+import ericImage from './images/eric.jpg';
+import kenneyImage from './images/kenney.png';
+import gamepipeImage from './images/viterbi-gamepipe-logo.png';
 
 const placeholderSrcWide = 'https://bytesizemoments.com/wp-content/uploads/2014/04/placeholder3.png';
-const placeholderSrcSquare = 'http://larics.rasip.fer.hr/wp-content/uploads/2016/04/default-placeholder.png';
-const kenneyLogoSrc = 'http://kenney.nl/data/img/logo.png';
-const gamepipeLogoSrc = '/viterbi-gamepipe-logo.png';
+// const placeholderSrcSquare = 'http://larics.rasip.fer.hr/wp-content/uploads/2016/04/default-placeholder.png';
 
 class TinyBob extends Component {
   render() {
@@ -70,7 +73,7 @@ class TinyBob extends Component {
           <div className="container">
             <div className="row TinyBob-footer-row">
               <div className="col-sm-4 col-md-3 TinyBob-footer-logo-positioning">
-                <img alt="Kenney logo" src={kenneyLogoSrc} className="TinyBob-footer-logo"/>
+                <img alt="Kenney logo" src={kenneyImage} className="TinyBob-footer-logo"/>
               </div>
               <p className="col-sm-8 col-md-9 TinyBob-footer-p">
                 We thank <a href="http://kenney.nl">kenney.nl</a> for providing free art assets which were used in the making of TinyBob.
@@ -79,7 +82,7 @@ class TinyBob extends Component {
             <div className="row TinyBob-footer-row">
               <div className="col-sm-4 col-md-3 TinyBob-footer-logo-positioning">
                 <div className="TinyBob-footer-logo-backing">
-                  <img alt="USC Viterbi GamePipe logo" src={gamepipeLogoSrc} className="TinyBob-footer-logo"/>
+                  <img alt="USC Viterbi GamePipe logo" src={gamepipeImage} className="TinyBob-footer-logo"/>
                 </div>
               </div>
               <p className="col-sm-8 col-md-9 TinyBob-footer-p">
@@ -99,19 +102,19 @@ class TinyBob extends Component {
         name: 'Nick Wong',
         position: 'Team Lead, Networking engineer',
         bio: 'Some sentences about the team member Nick Wong will go here, but for now this is just placeholder text.',
-        img: '/eric.jpg',
+        img: nickImage,
       },
       {
         name: 'Matt Carey',
         position: 'Gameplay engineer, 3D Art Assets',
         bio: 'Some sentences about the team member Matt Carey will go here, but for now this is just placeholder text.',
-        img: '/eric.jpg',
+        img: mattImage,
       },
       {
         name: 'Eric Gauderman',
         position: 'Gameplay engineer, Balancing',
         bio: 'Some sentences about the team member Eric Gauderman will go here, but for now this is just placeholder text.',
-        img: '/eric.jpg',
+        img: ericImage,
       },
     ];
     const person = people[index];
