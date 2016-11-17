@@ -1,7 +1,13 @@
+@font-face {
+  font-family: 'Hogfish';
+  src: url('/fonts/hogfish.otf');
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Bubblegum Sans';
+  background-color: #222222;
 }
 
 p {

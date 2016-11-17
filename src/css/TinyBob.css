@@ -4,6 +4,10 @@
 
 
 
+.TinyBob-title {
+  font-family: 'Hogfish';
+}
+
 .TinyBob .TinyBob-header {
   display: flex;
   flex-direction: column;
@@ -70,7 +74,7 @@
 
 .TinyBob-team-image-container {
   padding: 20px;
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
@@ -104,10 +108,29 @@
 
 .TinyBob-footer-row {
   margin: 20px 0;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*justify-content: flex-start;*/
 }
 
 .TinyBob-footer-logo {
-  float: left;
-  height: 60px;
-  padding-right: 10px;
+  /*height: 80px;*/
+  max-height: 80px;
+}
+
+.TinyBob-footer-logo-positioning {
+  /*float: left;*/
+  /*margin-right: 10px;*/
+  /*width: 240px;*/
+  margin-bottom: 20px;
+}
+
+.TinyBob-footer-logo-backing {
+  background-color: #EEEEEE;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.TinyBob-footer-p {
+  /*margin-top: 20px;*/
 }
