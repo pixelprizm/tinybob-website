@@ -3,6 +3,7 @@ import './css/TinyBob.css';
 import nickImage from './images/eric.jpg';
 import mattImage from './images/eric.jpg';
 import ericImage from './images/eric.jpg';
+import unrealImage from './images/unreal.png';
 import kenneyImage from './images/kenney.png';
 import gamepipeImage from './images/viterbi-gamepipe-logo.png';
 
@@ -35,23 +36,39 @@ class TinyBob extends Component {
             </h1>
             <p>
               Be the first to cross the finish line at the top of the stage,
-              and slow your friends down to ensure your victory!
+              and attack your enemies with collectible powers to ensure your victory!
               Don't forget to collect coins along the way!
             </p>
             <p>
               TinyBob combines the feel of Super Smash Bros with the racing
               and combat elements of Mario Kart.
             </p>
-            <div className="TinyBob-game-images">
-              <img alt="Gameplay" src={placeholderSrcWide} className="TinyBob-game-image"/>
-              <img alt="Gameplay" src={placeholderSrcWide} className="TinyBob-game-image"/>
-            </div>
-            <div className="TinyBob-game-captions">
-              <div className="TinyBob-game-caption">
-                <p>Caption about first screenshot</p>
+            <div className="row">
+              <div className="col-sm-6">
+                <div className="TinyBob-game-image-container">
+                  <img alt="Gameplay" src={placeholderSrcWide} className="TinyBob-game-image"/>
+                </div>
+                <p className="TinyBob-game-caption">Hit your enemies with a push to send them flying off the stage!</p>
               </div>
-              <div className="TinyBob-game-caption">
-                <p>Caption about second screenshot</p>
+              <div className="col-sm-6">
+                <div className="TinyBob-game-image-container">
+                  <img alt="Gameplay" src={placeholderSrcWide} className="TinyBob-game-image"/>
+                </div>
+                <p className="TinyBob-game-caption">Pull your enemy into a spiky negative coin!</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-6">
+                <div className="TinyBob-game-image-container">
+                  <img alt="Gameplay" src={placeholderSrcWide} className="TinyBob-game-image"/>
+                </div>
+                <p className="TinyBob-game-caption">Do a Dash to get zoom past your enemies!</p>
+              </div>
+              <div className="col-sm-6">
+                <div className="TinyBob-game-image-container">
+                  <img alt="Gameplay" src={placeholderSrcWide} className="TinyBob-game-image"/>
+                </div>
+                <p className="TinyBob-game-caption">Zap your enemy to make them fall down wherever they are!</p>
               </div>
             </div>
           </div>
@@ -73,9 +90,17 @@ class TinyBob extends Component {
           <div className="container">
             <div className="row TinyBob-footer-row">
               <div className="col-sm-4 col-md-3 TinyBob-footer-logo-positioning">
+                <img alt="Unreal Engine logo" src={unrealImage} className="TinyBob-footer-logo"/>
+              </div>
+              <p className="col-sm-8 col-md-9 TinyBob-footer-paragraph">
+                Made in Unreal Engine 4.
+              </p>
+            </div>
+            <div className="row TinyBob-footer-row">
+              <div className="col-sm-4 col-md-3 TinyBob-footer-logo-positioning">
                 <img alt="Kenney logo" src={kenneyImage} className="TinyBob-footer-logo"/>
               </div>
-              <p className="col-sm-8 col-md-9 TinyBob-footer-p">
+              <p className="col-sm-8 col-md-9 TinyBob-footer-paragraph">
                 We thank <a href="http://kenney.nl">kenney.nl</a> for providing free art assets which were used in the making of TinyBob.
               </p>
             </div>
@@ -85,7 +110,7 @@ class TinyBob extends Component {
                   <img alt="USC Viterbi GamePipe logo" src={gamepipeImage} className="TinyBob-footer-logo"/>
                 </div>
               </div>
-              <p className="col-sm-8 col-md-9">
+              <p className="col-sm-8 col-md-9 TinyBob-footer-paragraph">
                 Made for the CSCI-523 Networked Games class at USC in fall 2016.
               </p>
             </div>
@@ -100,20 +125,33 @@ class TinyBob extends Component {
     const people = [
       {
         name: 'Nick Wong',
-        position: 'Team Lead, Networking engineer',
-        bio: 'Some sentences about the team member Nick Wong will go here, but for now this is just placeholder text.',
+        jobs: [
+          'Team lead',
+          'Networking',
+          'User interface',
+          'Level chunk system',
+          'Level design',
+        ],
         img: nickImage,
       },
       {
         name: 'Matt Carey',
-        position: 'Gameplay engineer, 3D Art Assets',
-        bio: 'Some sentences about the team member Matt Carey will go here, but for now this is just placeholder text.',
+        jobs: [
+          'Platform effects',
+          '3D asset creation',
+          'User interface',
+          'Level design',
+        ],
         img: mattImage,
       },
       {
         name: 'Eric Gauderman',
-        position: 'Gameplay engineer, Balancing',
-        bio: 'Some sentences about the team member Eric Gauderman will go here, but for now this is just placeholder text.',
+        jobs: [
+          'Power-ups & Coins',
+          'Speed balancing',
+          'Website',
+          'Level design',
+        ],
         img: ericImage,
       },
     ];
@@ -128,8 +166,14 @@ class TinyBob extends Component {
           <h2 className="TinyBob-team-name TinyBob-title">
             {person.name}
           </h2>
-          <div className="TinyBob-team-position">
-            {person.position}
+          <div className="TinyBob-team-jobs-container">
+            <ul className="TinyBob-team-jobs">
+              {person.jobs.map((job, i) => (
+                <li key={i}>
+                  {job}
+                </li>
+              ))}
+            </ul>
           </div>
           <p>
             {person.bio}
