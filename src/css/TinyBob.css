@@ -16,19 +16,40 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 75vh;
+  height: 80vh;
   min-height: 400px;
   background-color: #007888;
   background-image: url('../images/hero.png');
-  background-size: auto 80%;
+  background-size: auto 72%;
   background-repeat: no-repeat;
-  background-position: 70% 10%;
+  background-position: 80% 00%;
   color: #DDFFDD;
   margin-bottom: 0;
 }
 
 .TinyBob .TinyBob-header-title {
+  margin-bottom: -20px;
+}
+
+.TinyBob .TinyBob-header-subtitle {
+  margin-bottom: -20px;
+}
+
+@media(min-width:768px) {
+  .TinyBob .TinyBob-header {
+    text-align: left;
+    height: 75vh;
+    background-size: auto 80%;
+    background-position: 70% 10%;
+  }
+  .TinyBob .TinyBob-header-title {
+    margin-bottom: 0;
+  }
+}
+
+.TinyBob .TinyBob-header-title {
   font-size: 90px;
+
 }
 
 .TinyBob-big-letter {
