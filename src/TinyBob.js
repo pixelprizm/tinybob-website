@@ -40,7 +40,7 @@ class TinyBob extends Component {
               Don't forget to collect coins along the way!
             </p>
             <p>
-              TinyBob combines the feel of Super Smash Bros with the racing
+              TinyBob combines the movement of Super Smash Bros with the racing
               and combat elements of Mario Kart.
             </p>
             <div className="row">
@@ -101,7 +101,7 @@ class TinyBob extends Component {
                 <img alt="Kenney logo" src={kenneyImage} className="TinyBob-footer-logo"/>
               </div>
               <p className="col-sm-8 col-md-9 TinyBob-footer-paragraph">
-                We thank <a href="http://kenney.nl">kenney.nl</a> for providing free art assets which were used in the making of TinyBob.
+                We thank <a href="http://kenney.nl" target="_blank">kenney.nl</a> for providing free art assets which were used in the making of TinyBob.
               </p>
             </div>
             <div className="row TinyBob-footer-row">
@@ -133,6 +133,7 @@ class TinyBob extends Component {
           'Level design',
         ],
         img: nickImage,
+        website: 'http://nicholasgwong.net',
       },
       {
         name: 'Matt Carey',
@@ -143,6 +144,7 @@ class TinyBob extends Component {
           'Level design',
         ],
         img: mattImage,
+        website: 'http://matts.games',
       },
       {
         name: 'Eric Gauderman',
@@ -153,6 +155,7 @@ class TinyBob extends Component {
           'Level design',
         ],
         img: ericImage,
+        website: 'http://egauderman.github.io',
       },
     ];
     const person = people[index];
@@ -167,6 +170,9 @@ class TinyBob extends Component {
             {person.name}
           </h2>
           <div className="TinyBob-team-jobs-container">
+            <p>
+              <a href={person.website} target="_blank">website</a>
+            </p>
             <ul className="TinyBob-team-jobs">
               {person.jobs.map((job, i) => (
                 <li key={i}>
@@ -175,9 +181,6 @@ class TinyBob extends Component {
               ))}
             </ul>
           </div>
-          <p>
-            {person.bio}
-          </p>
         </div>
       </div>
     );
