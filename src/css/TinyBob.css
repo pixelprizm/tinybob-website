@@ -19,6 +19,10 @@ a:active {
   height: 75vh;
   min-height: 400px;
   background-color: #007888;
+  background-image: url('../images/hero.png');
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+  background-position: 70% 10%;
   color: #DDFFDD;
   margin-bottom: 0;
 }
