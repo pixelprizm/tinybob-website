@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './css/TinyBob.css';
-import nickImage from './images/eric.jpg';
+import nickImage from './images/nick.jpg';
 import mattImage from './images/eric.jpg';
 import ericImage from './images/eric.jpg';
 import unrealImage from './images/unreal.png';
