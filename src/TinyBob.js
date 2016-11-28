@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import './css/TinyBob.css';
 import nickImage from './images/nick.jpg';
-import mattImage from './images/eric.jpg';
+import mattImage from './images/matt.png';
 import ericImage from './images/eric.jpg';
+import bounceImage from './images/bounce_picture.png';
+import pushImage from './images/push_picture.png';
+import pullImage from './images/pull_picture.png';
+import dashImage from './images/dash_picture.png';
 import unrealImage from './images/unreal.png';
 import kenneyImage from './images/kenney.png';
 import gamepipeImage from './images/viterbi-gamepipe-logo.png';
 
 const placeholderSrcWide = 'https://bytesizemoments.com/wp-content/uploads/2014/04/placeholder3.png';
-// const placeholderSrcSquare = 'http://larics.rasip.fer.hr/wp-content/uploads/2016/04/default-placeholder.png';
 
 class TinyBob extends Component {
   render() {
@@ -46,29 +49,29 @@ class TinyBob extends Component {
             <div className="row">
               <div className="col-sm-6">
                 <div className="TinyBob-game-image-container">
-                  <img alt="Gameplay" src={placeholderSrcWide} className="TinyBob-game-image"/>
+                  <img alt="Gameplay" src={pushImage} className="TinyBob-game-image"/>
                 </div>
-                <p className="TinyBob-game-caption">Hit your enemies with a push to send them flying off the stage!</p>
+                <p className="TinyBob-game-caption">Hit your enemies with Push to send them flying off the platform!</p>
               </div>
               <div className="col-sm-6">
                 <div className="TinyBob-game-image-container">
-                  <img alt="Gameplay" src={placeholderSrcWide} className="TinyBob-game-image"/>
+                  <img alt="Gameplay" src={pullImage} className="TinyBob-game-image"/>
                 </div>
-                <p className="TinyBob-game-caption">Pull your enemy into a spiky negative coin!</p>
+                <p className="TinyBob-game-caption">If your opponent is ahead, hit them with Pull to make them fall off their platform and lose their lead!</p>
               </div>
             </div>
             <div className="row">
               <div className="col-sm-6">
                 <div className="TinyBob-game-image-container">
-                  <img alt="Gameplay" src={placeholderSrcWide} className="TinyBob-game-image"/>
+                  <img alt="Gameplay" src={bounceImage} className="TinyBob-game-image"/>
                 </div>
-                <p className="TinyBob-game-caption">Do a Dash to get zoom past your enemies!</p>
+                <p className="TinyBob-game-caption">Use Bounce and Conveyor Belt platforms to your advantage to pass by your enemies!</p>
               </div>
               <div className="col-sm-6">
                 <div className="TinyBob-game-image-container">
-                  <img alt="Gameplay" src={placeholderSrcWide} className="TinyBob-game-image"/>
+                  <img alt="Gameplay" src={dashImage} className="TinyBob-game-image"/>
                 </div>
-                <p className="TinyBob-game-caption">Zap your enemy to make them fall down wherever they are!</p>
+                <p className="TinyBob-game-caption">Do a Dash to get zoom past your enemies to the finish line!</p>
               </div>
             </div>
           </div>
