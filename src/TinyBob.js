@@ -38,6 +38,9 @@ class TinyBob extends Component {
               AMEPLAY
             </h1>
             <p>
+              <a href="https://youtu.be/zBgCUewYfbc" target="_blank">Watch the Trailer</a>
+            </p>
+            <p>
               Be the first to cross the finish line at the top of the stage,
               and attack your enemies with collectible powers to ensure your victory!
               Don't forget to collect coins along the way!

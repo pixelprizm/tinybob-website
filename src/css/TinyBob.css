@@ -69,6 +69,18 @@ a:active {
   padding: 30px 0;
 }
 
+.TinyBob-game-section a,
+.TinyBob-game-section a:visited {
+  color: #337733;
+  text-decoration: underline;
+}
+.TinyBob-game-section a:hover {
+  color: #55AA55;
+}
+.TinyBob-game-section a:active {
+  color: #88FF88;
+}
+
 .TinyBob-game-image-container {
   text-align: center;
 }
